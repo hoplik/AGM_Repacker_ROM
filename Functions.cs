@@ -143,6 +143,7 @@ namespace Code_Decode_ROM
             StringBuilder str_by_eight = new StringBuilder(full_str);
             int count_char_place = 0;
             int count_full_char_string = 0;
+            int count_string = 0;
             for (int i = 0; i < all_read_chars; i++)
             {
                 if (str_by_eight.Length < (count_char_place * 3) + count_full_char_string)
@@ -177,7 +178,8 @@ namespace Code_Decode_ROM
             }
             while ((count_full_char_string / chars_to_string * 5 + 2) > 1) // Расставляем переносы для удобства чтения
             {
-                str_by_eight.Insert(count_full_char_string, Environment.NewLine);
+                count_string++;
+                str_by_eight.Insert(count_full_char_string, count_string.ToString() + Environment.NewLine);
                 count_full_char_string -= chars_to_string * 5 + 2;
             }
             return str_by_eight.ToString();
