@@ -13,3 +13,6 @@ https://github.com/hoplik/AGM_Repacker_ROM/wiki
 
 Пожелания, вопросы, проблемы - Issues:
 https://github.com/hoplik/AGM_Repacker_ROM/issues
+
+Проект закрыт, т.к. реализован в виде отдельного инструмента для программы Firehose Finder.
+https://github.com/hoplik/Firehose-Finder
